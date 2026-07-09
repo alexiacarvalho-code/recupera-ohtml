@@ -1,13 +1,13 @@
-/* ==============================
+/* ===========================
    Estilos gerais da página
-============================== */
+=========================== */
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #eef7f6;
+    background-color: #eef6f8;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
+    color: #333;
 }
 
 /* Contêiner principal */
@@ -19,21 +19,21 @@ body {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Título principal */
 
 h1 {
     text-align: center;
-    color: #2c7a7b;
+    color: #1b6f6a;
     margin-bottom: 20px;
 }
 
 /* Subtítulos */
 
 h2 {
-    color: #2f855a;
+    color: #2e8b57;
     margin-top: 20px;
 }
 
@@ -45,7 +45,7 @@ p {
     text-align: justify;
 }
 
-/* Seções */
+/* Espaçamento entre seções */
 
 .secao {
     margin-top: 25px;
@@ -79,6 +79,6 @@ a:hover {
 .rodape {
     margin-top: 40px;
     text-align: center;
+    color: #666;
     font-size: 14px;
-    color: #666666;
 }
