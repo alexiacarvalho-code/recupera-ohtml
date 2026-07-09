@@ -1,76 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título exibido na aba do navegador -->
     <title>Empatia e Cooperação</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Arquivo de estilos -->
-    <link rel="stylesheet" href="style.css">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f7f6;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        .header-container {
+            background: linear-gradient(135deg, #4a7c59, #68b0ab);
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .header-container h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-container p {
+            font-size: 1.25rem;
+            max-width: 650px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Conteúdo Principal */
+        .main-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Blocos de Conteúdo / Cards */
+        .card-section {
+            background-color: #ffffff;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Efeito sutil ao passar o mouse nos blocos */
+        .card-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-section h2 {
+            color: #2b4f37;
+            margin-bottom: 20px;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #e8f1ed;
+            padding-bottom: 10px;
+        }
+
+        .card-section p {
+            font-size: 1.05rem;
+            color: #555555;
+            margin-bottom: 15px;
+        }
+
+        /* Listas */
+        .card-section ul {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .card-section li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: #444444;
+        }
+
+        /* Marcador customizado via CSS puro */
+        .card-section li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4a7c59;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Rodapé */
+        .footer-container {
+            background-color: #2b4f37;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+        }
+
+        .footer-container p {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            opacity: 0.85;
+        }
+
+        /* Links */
+        .footer-container a {
+            color: #81c7c2;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .footer-container a:hover {
+            color: #faf3dd;
+            text-decoration: underline;
+        }
+
+        /* Responsividade básica */
+        @media (max-width: 600px) {
+            .header-container h1 {
+                font-size: 2.2rem;
+            }
+            .header-container p {
+                font-size: 1.1rem;
+            }
+            .card-section {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-    <!-- Contêiner principal da página -->
-    <div class="container">
-
-        <!-- Título principal -->
+    <div class="header-container">
         <h1>Empatia e Cooperação</h1>
+        <p>Construindo pontes e transformando realidades através da compreensão mútua e do trabalho coletivo.</p>
+    </div>
 
-        <!-- Introdução -->
-        <p>
-            A empatia é a capacidade de compreender os sentimentos e as perspectivas das outras
-            pessoas. Já a cooperação consiste em trabalhar em conjunto para alcançar objetivos
-            comuns, fortalecendo o respeito, a solidariedade e a convivência harmoniosa.
-        </p>
+    <div class="main-container">
+        
+        <div class="card-section">
+            <h2>O que é Empatia?</h2>
+            <p>A empatia é a capacidade psicológica de se colocar no lugar de outra pessoa, buscando compreender seus sentimentos, perspectivas e motivações. Vai muito além de apenas lamentar a dor alheia; trata-se de enxergar o mundo sob a ótica do outro, despindo-se de julgamentos prévios.</p>
+            <p>Quando praticamos a empatia, criamos um espaço seguro para o diálogo e fortalecemos os vínculos humanos, gerando um ambiente de acolhimento e respeito mútuo.</p>
+        </div>
 
-        <!-- Seção de exemplos -->
-        <div class="secao">
+        <div class="card-section">
+            <h2>O Poder da Cooperação</h2>
+            <p>Se a empatia nos permite compreender o próximo, a cooperação é a ação prática que decorre dessa união. Cooperar significa agir conjuntamente com outras pessoas para alcançar um objetivo comum, entendendo que o sucesso coletivo é mais sustentável e robusto do que o esforço puramente individual.</p>
+            <p>Em uma sociedade cooperativa, a competição dá lugar ao suporte mútuo, onde a vulnerabilidade de um é compensada pela força do outro.</p>
+        </div>
 
-            <h2>Atitudes empáticas e cooperativas</h2>
-
+        <div class="card-section">
+            <h2>Como Praticar no Dia a Dia</h2>
+            <p>Pequenas atitudes diárias podem cultivar ambientes muito mais empáticos e colaborativos. Veja por onde começar:</p>
             <ul>
-                <li>Ouvir as pessoas com atenção.</li>
-                <li>Respeitar opiniões diferentes.</li>
-                <li>Oferecer ajuda quando necessário.</li>
-                <li>Compartilhar conhecimentos.</li>
-                <li>Trabalhar em equipe com responsabilidade.</li>
+                <li><strong>Pratique a escuta ativa:</strong> Ouça as pessoas com a intenção de compreender, não apenas de responder.</li>
+                <li><strong>Compartilhe conhecimento:</strong> Ajude colegas e amigos dividindo o que você sabe, sem esperar nada em troca.</li>
+                <li><strong>Valide os sentimentos alheios:</strong> Evite minimizar as dificuldades enfrentadas pelas pessoas à sua volta.</li>
+                <li><strong>Colabore em tarefas comuns:</strong> Divida responsabilidades de forma justa, seja em casa, na escola ou no trabalho.</li>
             </ul>
-
         </div>
-
-        <!-- Seção de incentivo -->
-        <div class="secao">
-
-            <h2>Pratique diariamente</h2>
-
-            <p>
-                Pequenas ações, como ser gentil, colaborar com colegas e compreender as dificuldades
-                das outras pessoas, ajudam a construir um ambiente mais acolhedor, respeitoso e
-                cooperativo para todos.
-            </p>
-
-        </div>
-
-        <!-- Link para uma fonte confiável -->
-        <p>
-            Saiba mais sobre o tema em:
-            <a href="https://brasilescola.uol.com.br/sociologia/empatia.htm" target="_blank">
-                Brasil Escola – Empatia
-            </a>
-        </p>
-
-        <!-- Rodapé -->
-        <p class="rodape">
-            © 2026 - Página desenvolvida para atividade acadêmica.
-        </p>
 
     </div>
 
-</body>
+    <div class="footer-container">
+        <p>&copy; 2026 - Cultivando um Futuro Melhor.</p>
+        <p>Quer aprofundar seus conhecimentos? <a href="https://pt.wikipedia.org/wiki/Comunica%C3%A7%C3%A3o_n%C3%A3o_violenta" target="_blank">Saiba mais sobre Comunicação Não-Violenta</a></p>
+    </div>
 
+</body>
 </html>

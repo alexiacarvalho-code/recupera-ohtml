@@ -1,11 +1,11 @@
-/* ===========================
-   Estilos gerais da página
-=========================== */
+/* ==========================
+   Estilo geral da página
+========================== */
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #eef6f8;
+    background-color: #eef7f8;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
 }
@@ -22,12 +22,11 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Título principal */
+/* Título */
 
 h1 {
     text-align: center;
-    color: #1b6f6a;
-    margin-bottom: 20px;
+    color: #1b7f79;
 }
 
 /* Subtítulos */
@@ -45,7 +44,7 @@ p {
     text-align: justify;
 }
 
-/* Espaçamento entre seções */
+/* Seções */
 
 .secao {
     margin-top: 25px;
@@ -59,7 +58,6 @@ ul {
 
 li {
     margin-bottom: 10px;
-    font-size: 17px;
 }
 
 /* Link */
@@ -79,6 +77,6 @@ a:hover {
 .rodape {
     margin-top: 40px;
     text-align: center;
-    color: #666;
     font-size: 14px;
+    color: #666;
 }
